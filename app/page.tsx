@@ -158,11 +158,8 @@ export default function Home() {
           loop
           playsInline
           className="absolute w-full h-full object-cover"
-          ref={(el) => {
-            if (el) el.playbackRate = 0.1;
-          }}
         >
-          <source src="/video/create_a_glitch_effect_slow_with_ripple_effect_as_if_it_was_for_an_issey_miyake_installation_comput_oi3yb3i84fqz3qnr9pb2_1.mp4" type="video/mp4" />
+          <source src="/video/create_a_glitch_effect_slow_with_ripple_effect_as_if_it_was_for_an_issey_miyake_installation_comput_8xekxn2gixvcg39mcqc3_1.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className={`text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white font-light ${orbitron.className}`}>
