@@ -64,7 +64,7 @@ export default function Home() {
           src="/images/hero/hero_mono.jpg"
           alt="Textured background"
           fill
-          className="object-cover sepia"
+          className="object-cover"
           priority
         />
         <div className="absolute inset-0 flex items-center justify-center">
