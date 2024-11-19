@@ -202,11 +202,14 @@ export default function Home() {
         <section id="contact" className="space-y-8">
           <h2 className="text-xl font-light">CONTACT</h2>
           <div className="space-y-4">
+            <p className="text-lg">Coming soon</p>
+          </div>
+          {/* <div className="space-y-4">
             <Link href="mailto:latexgallery@gmail.com" className="text-lg underline block">
               latexgallery@gmail.com
             </Link>
             <p className="text-lg">@latex.gallery</p>
-          </div>
+          </div> */}
         </section>
       </div>
     </main>
