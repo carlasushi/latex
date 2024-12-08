@@ -202,12 +202,15 @@ export default function Home() {
         <section id="contact" className="space-y-8">
           <h2 className="text-xl font-light">CONTACT</h2>
           <div className="space-y-4">
-            <p className="text-lg">Coming soon</p>
-          </div>
-          <div className="space-y-4">
+            <div className="space-y-4">
+              <p className="text-lg">Email</p>
+            </div>
             <Link href="mailto:info@www.latexgallery.art" className="text-lg underline block">
               info@www.latexgallery.art
             </Link>
+            <div className="space-y-4">
+              <p className="text-lg">Socials</p>
+            </div>
             <Link href="https://www.instagram.com/latex.gallery/profilecard/" className="text-lg underline block"></Link>
             <p className="text-lg">@latex.gallery</p>
           </div>
