@@ -193,7 +193,7 @@ export default function Home() {
           <h2 className="text-xl font-light">ARTISTS</h2>
           <div className="space-y-4">
             <Link href="#" className="text-xl underline font-light">
-              OPEN CALL CLOSING IN JAN 2025
+              COMING SOON
             </Link>
           </div>
         </section>
