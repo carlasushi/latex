@@ -206,13 +206,14 @@ export default function Home() {
               <p className="text-lg">Email</p>
             </div>
             <Link href="mailto:info@www.latexgallery.art" className="text-lg underline block">
-              info@www.latexgallery.art
+              <p>info@www.latexgallery.art</p>
             </Link>
             <div className="space-y-4">
               <p className="text-lg">Socials</p>
             </div>
-            <Link href="https://www.instagram.com/latex.gallery/profilecard/" className="text-lg underline block"></Link>
+            <Link href="https://www.instagram.com/latex.gallery/profilecard/" className="text-lg underline block">
             <p className="text-lg">@latex.gallery</p>
+            </Link>
           </div>
         </section>
       </div>
