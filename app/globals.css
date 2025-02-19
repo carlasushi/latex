@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .page-title {
+    @apply text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white font-light;
+  }
+
+  .hero-section {
+    @apply relative h-screen;
+  }
+
+  .hero-video {
+    @apply absolute w-full h-full object-cover;
+  }
+
+  .hero-content {
+    @apply absolute inset-0 flex items-center justify-center;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

@@ -146,6 +146,11 @@ export default function Home() {
                 contact
               </Link>
             </li>
+            <li className="text-center">
+              <Link href="/lab" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
+                lab
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
