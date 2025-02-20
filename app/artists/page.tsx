@@ -99,14 +99,14 @@ export default function Artists() {
                       </a>
                     </p>
                     <p>
-                      <a
+                      {/* <a
                         href="https://cosmicorder.net/animal-spirits/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-800 underline"
                       >
                         Animal Spirits Project →
-                      </a>
+                      </a> */}
                     </p>
                   </div>
                 </div>
