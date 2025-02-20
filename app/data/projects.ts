@@ -11,7 +11,7 @@ export const projects: Project[] = [
     id: '1',
     title: 'Port+all',
     description: 'Interactive installation exploring digital portals and spatial awareness.',
-    image: '/images/projects/portall-placeholder.jpg', // Add actual image path
+    image: '/images/portall/postcard.webp',
     slug: 'portall'
   },
   // More projects can be added here later

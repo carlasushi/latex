@@ -18,7 +18,10 @@ export default function Lab() {
         >
           <source src="/video/lab.mp4" type="video/mp4" />
         </video>
-        <h1 className="text-6xl font-light pt-6">LAB</h1>
+        <h1 className="text-6xl font-light mb-8">LAB</h1>
+        <h2 className="text-xl font-mono max-w-3xl mx-auto leading-relaxed">
+          LatexLAB is an incubator for artists, technologists, historians, and communities to experiment with decentralized digital technology.
+        </h2>
       </div>
 
       <div className="container mx-auto px-4">

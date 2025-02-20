@@ -1,4 +1,5 @@
 import Navigation from '../../components/Navigation';
+import Image from 'next/image';
 import { projects } from '../../data/projects';
 
 export default function Portall() {
@@ -17,8 +18,13 @@ export default function Portall() {
           <h1 className="text-6xl font-light mb-8">{project.title}</h1>
 
           {/* Project Hero Image */}
-          <div className="bg-gray-200 aspect-video w-full mb-12">
-            {/* Add hero image when available */}
+          <div className="w-full aspect-video relative mb-12">
+            <Image
+              src="/images/portall/postcard.webp"
+              alt="Port+all Project"
+              fill
+              className="object-cover"
+            />
           </div>
 
           {/* Project Description */}
