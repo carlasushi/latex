@@ -10,7 +10,7 @@ export const projects: Project[] = [
   {
     id: '1',
     title: 'Port+all',
-    description: 'Interactive installation exploring digital portals and spatial awareness.',
+    description: 'Port+ALL – A Living Archive for 7artscafe',
     image: '/images/portall/postcard.webp',
     slug: 'portall'
   },
