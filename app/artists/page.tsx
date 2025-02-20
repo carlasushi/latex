@@ -66,7 +66,7 @@ export default function Artists() {
                   <div>
                     <h3 className="text-lg font-medium mb-2">Artistic Discipline</h3>
                     <p className="text-gray-600">
-                      Ceramics, Creative Technology, 3D Rendering, 3D Printing, Digital Preservation
+                      Ceramics, Creative Technology, 3D Rendering, 3D Printing
                     </p>
                   </div>
                 </div>
@@ -78,8 +78,7 @@ export default function Artists() {
                     <p className="text-gray-600">
                       A ceramicist and creative technologist focusing on 3D renderings, 3D printing,
                       casting and digital preservation of artifacts. With a background in molecular biology,
-                      applied linguistics, psychology and neuroscience, her interdisciplinary approach
-                      brings unique perspectives to digital art preservation. She studied ceramics in
+                      applied linguistics, psychology and neuroscience. She studied ceramics in
                       California, Barcelona and Hiroshima, combining traditional craft with modern technology.
                     </p>
                   </div>

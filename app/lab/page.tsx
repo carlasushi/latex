@@ -5,6 +5,8 @@ import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
 import { useMouse } from '../hooks/useMouse';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Lab() {
   const mouse = useMouse();
@@ -58,10 +60,30 @@ export default function Lab() {
 
         {/* Projects Section */}
         <div className="py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-6xl font-light mb-8">Lab</h1>
+
+            {/* Projects Grid */}
+            <div className="grid grid-cols-1 gap-8">
+              {projects.map((project) => (
+                <Link
+                  key={project.slug}
+                  href={`/lab/${project.slug}`}
+                  className="block group"
+                >
+                  <div className="aspect-video relative mb-4 overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform group-hover:scale-105"
+                    />
+                  </div>
+                  <h2 className="text-2xl font-light">{project.title}</h2>
+                  <p className="text-gray-600 mt-2">{project.description}</p>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
