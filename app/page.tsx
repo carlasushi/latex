@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Orbitron } from 'next/font/google';
 import { useState, useRef, useEffect } from 'react';
+import Navigation from './components/Navigation';
 
 const orbitron = Orbitron({ subsets: ['latin'] });
 
@@ -99,62 +100,10 @@ function RippleEffect() {
 }
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <main className="min-h-screen bg-white font-mono">
+      <Navigation />
       <RippleEffect />
-      {/* Navigation */}
-      <nav className={`fixed top-0 w-full bg-white/30 backdrop-blur-md z-50 ${orbitron.className}`}>
-        <div className="container mx-auto px-4">
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex justify-end py-4">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-black p-2"
-            >
-              {isMenuOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
-            </button>
-          </div>
-
-          {/* Desktop Menu */}
-          <ul className={`
-            md:flex md:justify-center md:space-x-12 md:py-4
-            ${isMenuOpen ? 'block' : 'hidden'}
-            space-y-4 md:space-y-0 py-4
-          `}>
-            <li className="text-center">
-              <Link href="#about" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
-                about
-              </Link>
-            </li>
-            <li className="text-center">
-              <Link href="#artists" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
-                artists
-              </Link>
-            </li>
-            <li className="text-center">
-              <Link href="#contact" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
-                contact
-              </Link>
-            </li>
-            <li className="text-center">
-              <Link href="/lab" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
-                lab
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <div className="relative h-screen">
         <video
@@ -190,16 +139,6 @@ export default function Home() {
               through the integration of traditional forms with modern practices, enabling visitors to
               explore and purchase both digital and real-world art.
             </p>
-          </div>
-        </section>
-
-        {/* Artists Section */}
-        <section id="artists" className="space-y-8">
-          <h2 className="text-xl font-light">ARTISTS</h2>
-          <div className="space-y-4">
-            <Link href="#" className="text-xl underline font-light">
-              COMING SOON
-            </Link>
           </div>
         </section>
 

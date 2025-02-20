@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="fixed top-0 w-full bg-white/30 backdrop-blur-md z-50">
@@ -44,18 +46,26 @@ export default function Navigation() {
             </Link>
           </li>
           <li className="text-center">
-            <Link href="/#artists" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
-              artists
-            </Link>
-          </li>
-          <li className="text-center">
             <Link href="/#contact" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
               contact
             </Link>
           </li>
           <li className="text-center">
-            <Link href="/lab" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="/lab"
+              className={`text-sm md:text-lg hover:underline font-light ${pathname.startsWith('/lab') ? 'text-blue-600' : ''}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
               lab
+            </Link>
+          </li>
+          <li className="text-center">
+            <Link
+              href="/artists"
+              className={`text-sm md:text-lg hover:underline font-light ${pathname === '/artists' ? 'text-blue-600' : ''}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              artists
             </Link>
           </li>
         </ul>
