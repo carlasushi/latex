@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Orbitron } from 'next/font/google';
-import { useState, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import Navigation from './components/Navigation';
 
 const orbitron = Orbitron({ subsets: ['latin'] });

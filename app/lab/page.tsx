@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../components/Navigation';
-import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
 import { useMouse } from '../hooks/useMouse';
 import { useEffect, useState } from 'react';
@@ -43,7 +42,7 @@ export default function Lab() {
           >
             <source src="/video/lab.mp4" type="video/mp4" />
           </video>
-          <h1 className="text-6xl font-light mb-8">LAB</h1>
+          <h1 className="text-6xl font-light my-8">LAB</h1>
           <h2 className="text-xl font-mono max-w-3xl mx-auto leading-relaxed">
             LatexLAB is an incubator for artists, technologists, historians, and communities to experiment with decentralized digital technology.
           </h2>
@@ -61,7 +60,7 @@ export default function Lab() {
         {/* Projects Section */}
         <div className="py-24">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-6xl font-light mb-8">Lab</h1>
+            <h1 className="text-6xl font-light mb-8">Current Projects</h1>
 
             {/* Projects Grid */}
             <div className="grid grid-cols-1 gap-8">
