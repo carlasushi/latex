@@ -101,6 +101,8 @@ export default function ImageGallery({ images, basePath, extension }: ImageGalle
         <div
           className="fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center overflow-hidden"
           onClick={() => setSelectedImage(null)}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
         >
           {/* Corner Lines */}
           <svg className="fixed inset-0 w-full h-full pointer-events-none">

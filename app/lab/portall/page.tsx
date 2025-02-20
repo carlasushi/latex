@@ -25,9 +25,22 @@ export default function Portall() {
       {/* Mouse Follow Effect */}
       {mounted && (
         <div
-          className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
+          className="pointer-events-none fixed inset-0 z-30 mix-blend-color-dodge animate-flicker"
           style={{
-            background: `radial-gradient(600px at ${mouse.x}px ${mouse.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+            background: `
+              radial-gradient(600px at ${mouse.x}px ${mouse.y}px,
+                rgba(255, 147, 15, 0.15),
+                transparent 70%
+              ),
+              radial-gradient(500px at ${mouse.x}px ${mouse.y}px,
+                rgba(255, 85, 15, 0.25),
+                transparent 60%
+              ),
+              radial-gradient(400px at ${mouse.x}px ${mouse.y}px,
+                rgba(255, 15, 15, 0.35),
+                transparent 50%
+              )
+            `
           }}
         />
       )}
@@ -65,7 +78,7 @@ export default function Portall() {
             <section className="my-12">
               <h2 className="text-2xl mb-4 font-mono">About the Project</h2>
               <div className="font-mono py-3 prose font-light space-y-4">
-                <p> Port = a haven, a sanctuary.</p>
+                <p>Port = a haven, a sanctuary.</p>
                 <p>Portal = a door, a gate.</p>
                 <p>All = together, a collective, from the German &ldquo;allez.&rdquo;</p>
                 <p className="mt-8">Port(ALL) is a proposal by LatexLAB to integrate 7artscafe into a global arts network using distributed technology and archival innovation. Just as ports historically connected distant cultures, cafés serve as modern meeting points for exchanging ideas, skills, and stories. Port(ALL) envisions 7artscafe as a gateway between physical and digital realms, preserving its creative ecosystem for future generations.</p>
@@ -111,8 +124,6 @@ export default function Portall() {
                 </p>
               </div>
             </section>
-
-            {/* Add more sections as needed */}
           </div>
         </div>
       </div>
