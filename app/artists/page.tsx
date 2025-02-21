@@ -2,71 +2,11 @@
 
 import Navigation from '../components/Navigation';
 import Link from 'next/link';
-import { useMouse } from '../hooks/useMouse';
-import { useState, useEffect } from 'react';
 
 export default function Artists() {
-  const mouse = useMouse();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <main className="relative">
       <Navigation />
-
-      {/* Creative Mouse Follow Effect */}
-      {mounted && (
-        <>
-          {/* Main spray effect */}
-          <div
-            className="pointer-events-none fixed inset-0 z-30 transition-all duration-700 ease-out"
-            style={{
-              background: `
-                radial-gradient(circle 50px at ${mouse.x + 30}px ${mouse.y + 30}px, rgba(74, 222, 128, 0.03), transparent),
-                radial-gradient(circle 40px at ${mouse.x - 20}px ${mouse.y + 20}px, rgba(74, 222, 128, 0.03), transparent),
-                radial-gradient(circle 60px at ${mouse.x + 10}px ${mouse.y - 30}px, rgba(74, 222, 128, 0.03), transparent),
-                radial-gradient(circle 45px at ${mouse.x - 30}px ${mouse.y - 20}px, rgba(74, 222, 128, 0.03), transparent),
-                radial-gradient(circle 200px at ${mouse.x}px ${mouse.y}px, rgba(74, 222, 128, 0.05), transparent 70%)
-              `
-            }}
-          />
-
-          {/* Trailing effect with delay */}
-          <div
-            className="pointer-events-none fixed inset-0 z-29 transition-all duration-2000 ease-out"
-            style={{
-              background: `
-                radial-gradient(circle 70px at ${mouse.x + 50}px ${mouse.y + 50}px, rgba(74, 222, 128, 0.01), transparent),
-                radial-gradient(circle 60px at ${mouse.x - 40}px ${mouse.y + 40}px, rgba(74, 222, 128, 0.01), transparent),
-                radial-gradient(circle 80px at ${mouse.x + 30}px ${mouse.y - 50}px, rgba(74, 222, 128, 0.01), transparent),
-                radial-gradient(circle 300px at ${mouse.x}px ${mouse.y}px, rgba(74, 222, 128, 0.02), transparent 80%)
-              `,
-              filter: 'blur(2px)',
-              transform: 'scale(1.1)'
-            }}
-          />
-
-          {/* Persistent trail */}
-          <div
-            className="pointer-events-none fixed inset-0 z-28 opacity-50 transition-all duration-3000 ease-out"
-            style={{
-              background: `
-                radial-gradient(
-                  circle 400px at ${mouse.x}px ${mouse.y}px,
-                  rgba(74, 222, 128, 0.01),
-                  transparent 90%
-                )
-              `,
-              filter: 'blur(4px)',
-              transform: 'scale(1.2)'
-            }}
-          />
-        </>
-      )}
-
       {/* Artists Content */}
       <div className="container mx-auto px-4 pt-32">
         <div className="max-w-4xl mx-auto">

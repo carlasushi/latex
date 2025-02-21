@@ -3,47 +3,15 @@
 import Navigation from '../../components/Navigation';
 import { projects } from '../../data/projects';
 import ImageGallery from '../../components/ImageGallery';
-import { useMouse } from '../../hooks/useMouse';
-import { useEffect, useState } from 'react';
 
 export default function Portall() {
   const project = projects.find(p => p.slug === 'portall');
-  const mouse = useMouse();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   if (!project) return null;
 
   return (
     <main className="relative">
       <Navigation />
-
-      {/* Mouse Follow Effect */}
-      {mounted && (
-        <div
-          className="pointer-events-none fixed inset-0 z-30 mix-blend-color-dodge animate-flicker"
-          style={{
-            background: `
-              radial-gradient(600px at ${mouse.x}px ${mouse.y}px,
-                rgba(255, 147, 15, 0.15),
-                transparent 70%
-              ),
-              radial-gradient(500px at ${mouse.x}px ${mouse.y}px,
-                rgba(255, 85, 15, 0.25),
-                transparent 60%
-              ),
-              radial-gradient(400px at ${mouse.x}px ${mouse.y}px,
-                rgba(255, 15, 15, 0.35),
-                transparent 50%
-              )
-            `
-          }}
-        />
-      )}
-
       {/* Project Content */}
       <div className="container mx-auto px-4 pt-32">
         {/* Project Header */}

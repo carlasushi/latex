@@ -2,33 +2,13 @@
 
 import Navigation from '../components/Navigation';
 import { projects } from '../data/projects';
-import { useMouse } from '../hooks/useMouse';
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Lab() {
-  const mouse = useMouse();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <main className="relative">
       <Navigation />
-
-      {/* Mouse Follow Effect */}
-      {mounted && (
-        <div
-          className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
-          style={{
-            background: `radial-gradient(600px at ${mouse.x}px ${mouse.y}px, rgba(29, 78, 216, 0.35), transparent 80%)`
-          }}
-        />
-      )}
-
       {/* Project Content */}
       <div className="container mx-auto px-4">
         {/* Hero Title */}
