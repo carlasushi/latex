@@ -88,7 +88,7 @@ export default function Artists() {
                       <h3 className="font-medium mb-2">Personal Statement</h3>
                       <p className="text-gray-600 font-light">
                         My practice combines traditional ceramics with digital innovation, informed by
-                        my background in science and linguistics. I'm interested in how technology can
+                        my background in science and linguistics. I&apos;m interested in how technology can
                         preserve and transform cultural artifacts, creating new dialogues between
                         traditional craft and contemporary digital practices.
                       </p>
@@ -255,7 +255,7 @@ export default function Artists() {
                   <h3 className="font-medium">Personal Statement</h3>
                   <p className="text-gray-600 font-light">
                     My practice combines traditional ceramics with digital innovation, informed by
-                    my background in science and linguistics. I'm interested in how technology can
+                    my background in science and linguistics. I&apos;m interested in how technology can
                     preserve and transform cultural artifacts, creating new dialogues between
                     traditional craft and contemporary digital practices.
                   </p>
