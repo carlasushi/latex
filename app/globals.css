@@ -150,3 +150,49 @@ body {
   animation: slideIn 0.6s ease-out forwards;
   opacity: 0;
 }
+
+@keyframes organic-pulse {
+  0% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+  25% {
+    transform: scale(1.015) rotate(0.2deg);
+    filter: brightness(1.02);
+  }
+  50% {
+    transform: scale(1.02) rotate(-0.2deg);
+    filter: brightness(1.03);
+  }
+  75% {
+    transform: scale(1.015) rotate(0.1deg);
+    filter: brightness(1.01);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: scale(1) translate(0);
+    filter: hue-rotate(0deg) blur(0px);
+  }
+  25% {
+    transform: scale(1.01) translate(2px, -1px);
+    filter: hue-rotate(5deg) blur(0.5px);
+  }
+  50% {
+    transform: scale(1.02) translate(-1px, 1px);
+    filter: hue-rotate(-5deg) blur(1px);
+  }
+  75% {
+    transform: scale(1.01) translate(1px, 2px);
+    filter: hue-rotate(5deg) blur(0.5px);
+  }
+  100% {
+    transform: scale(1) translate(0);
+    filter: hue-rotate(0deg) blur(0px);
+  }
+}

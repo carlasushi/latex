@@ -2,6 +2,7 @@
 
 import Navigation from '../components/Navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Artists() {
   return (
@@ -41,13 +42,32 @@ export default function Artists() {
                   <td className="py-4 px-6 h-full">
                     <div className="flex flex-col h-full">
                       <h3 className="font-medium mb-2">Background</h3>
-                      <p className="text-gray-600 font-light">
-                        PALOMIX is a ceramicist and creative technologist focusing on 3D renderings,
-                        3D printing, casting and digital preservation of artifacts. With a background in
-                        molecular biology, applied linguistics, psychology and neuroscience. She studied
-                        ceramics in California, Barcelona and Hiroshima, combining traditional craft with
-                        modern technology.
-                      </p>
+                      <div className="space-y-4">
+                        <div className="relative aspect-[4/3] w-full overflow-hidden group">
+                          <Image
+                            src="/images/artists/palomix/palomix_wakes_up.png"
+                            alt="Palomix"
+                            fill
+                            className="object-cover transition-all duration-1000 group-hover:animate-[glitch_2s_ease-in-out_infinite] animate-[organic-pulse_6s_ease-in-out_infinite]"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            priority
+                          />
+                          <div
+                            className="absolute inset-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-70"
+                            style={{
+                              background: 'radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.05) 100%)',
+                              animation: 'organic-pulse 6s ease-in-out infinite'
+                            }}
+                          />
+                        </div>
+                        <p className="text-gray-600 font-light">
+                          PALOMIX is a ceramicist and creative technologist focusing on 3D renderings,
+                          3D printing, casting and digital preservation of artifacts. With a background in
+                          molecular biology, applied linguistics, psychology and neuroscience. She studied
+                          ceramics in California, Barcelona and Hiroshima, combining traditional craft with
+                          modern technology.
+                        </p>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -91,10 +111,18 @@ export default function Artists() {
                     <div className="flex flex-col h-full">
                       <h3 className="font-medium mb-2">Personal Statement</h3>
                       <p className="text-gray-600 font-light">
-                        My practice combines traditional ceramics with digital innovation, informed by
-                        my background in science and linguistics. I&apos;m interested in how technology can
-                        preserve and transform cultural artifacts, creating new dialogues between
-                        traditional craft and contemporary digital practices.
+                        As PALOMIX, my artistic practice combines traditional ceramics with creative technology,
+                        inspired by the wisdom of older generations and the curiosity of children.
+                      </p>
+                      <p className="text-gray-600 font-light mt-4">
+                        I explore spirituality, ancestral knowledge, telepathy, and emotional connection,
+                        considering how thoughts and emotions can be visualized through creative expression.
+                        My curiosity also extends to non-human animals and their unique forms of communication.
+                        Through 3D renderings and modern techniques like 3D printing, I bridge traditional craft
+                        with contemporary digital practices.
+                      </p>
+                      <p className="text-gray-600 font-light mt-4">
+                        My goal is to create work that sparks joy.
                       </p>
                     </div>
                   </td>
@@ -156,20 +184,12 @@ export default function Artists() {
                     <h3 className="font-medium mb-2">Work Samples</h3>
                     <div className="space-y-2">
                       <a
-                        href="https://cosmicorder.net/"
+                        href="https://www.figma.com/board/Y30Y1u3Ud4WTQ5KGrKGvN2/Palomix-work"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block text-blue-600 hover:text-blue-800 underline"
                       >
-                        Portfolio →
-                      </a>
-                      <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-blue-600 hover:text-blue-800 underline"
-                      >
-                        Ceramics Collection →
+                        Portfolio Board →
                       </a>
                     </div>
                   </td>
@@ -234,13 +254,15 @@ export default function Artists() {
 
                 <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
                   <h3 className="font-medium">Personal Statement</h3>
-                  <p className="text-gray-600 font-light">
-                    As a digital nomad and creative technologist, I explore the intersection of
-                    traditional crafts and emerging technologies. My work focuses on creating
-                    participatory experiences that bridge physical and digital realms, questioning
-                    how we share and preserve cultural narratives in the age of blockchain and
-                    decentralized networks.
-                  </p>
+                  <div className="space-y-4">
+                    <p className="text-gray-600 font-light">
+                      As a digital nomad and creative technologist, I explore the intersection of
+                      traditional crafts and emerging technologies. My work focuses on creating
+                      participatory experiences that bridge physical and digital realms, questioning
+                      how we share and preserve cultural narratives in the age of blockchain and
+                      decentralized networks.
+                    </p>
+                  </div>
                 </div>
 
                 <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
@@ -263,13 +285,32 @@ export default function Artists() {
               <div className="divide-y divide-gray-200 divide-dashed">
                 <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
                   <h3 className="font-medium">Background</h3>
-                  <p className="text-gray-600 font-light">
-                    PALOMIX is a ceramicist and creative technologist focusing on 3D renderings,
-                    3D printing, casting and digital preservation of artifacts. With a background in
-                    molecular biology, applied linguistics, psychology and neuroscience. She studied
-                    ceramics in California, Barcelona and Hiroshima, combining traditional craft with
-                    modern technology.
-                  </p>
+                  <div className="space-y-4">
+                    <div className="relative aspect-[4/3] w-full overflow-hidden group">
+                      <Image
+                        src="/images/artists/palomix/palomix_wakes_up.png"
+                        alt="Palomix"
+                        fill
+                        className="object-cover transition-all duration-1000 group-hover:animate-[glitch_2s_ease-in-out_infinite] animate-[organic-pulse_6s_ease-in-out_infinite]"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        priority
+                      />
+                      <div
+                        className="absolute inset-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-70"
+                        style={{
+                          background: 'radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.05) 100%)',
+                          animation: 'organic-pulse 6s ease-in-out infinite'
+                        }}
+                      />
+                    </div>
+                    <p className="text-gray-600 font-light">
+                      PALOMIX is a ceramicist and creative technologist focusing on 3D renderings,
+                      3D printing, casting and digital preservation of artifacts. With a background in
+                      molecular biology, applied linguistics, psychology and neuroscience. She studied
+                      ceramics in California, Barcelona and Hiroshima, combining traditional craft with
+                      modern technology.
+                    </p>
+                  </div>
                 </div>
 
                 <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
@@ -281,19 +322,35 @@ export default function Artists() {
 
                 <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
                   <h3 className="font-medium">Personal Statement</h3>
-                  <p className="text-gray-600 font-light">
-                    My practice combines traditional ceramics with digital innovation, informed by
-                    my background in science and linguistics. I&apos;m interested in how technology can
-                    preserve and transform cultural artifacts, creating new dialogues between
-                    traditional craft and contemporary digital practices.
-                  </p>
+                  <div className="space-y-4">
+                    <p className="text-gray-600 font-light">
+                      As PALOMIX, my artistic practice combines traditional ceramics with creative technology,
+                      inspired by the wisdom of older generations and the curiosity of children.
+                    </p>
+                    <p className="text-gray-600 font-light">
+                      I explore spirituality, ancestral knowledge, telepathy, and emotional connection,
+                      considering how thoughts and emotions can be visualized through creative expression.
+                      My curiosity also extends to non-human animals and their unique forms of communication.
+                      Through 3D renderings and modern techniques like 3D printing, I bridge traditional craft
+                      with contemporary digital practices.
+                    </p>
+                    <p className="text-gray-600 font-light">
+                      My goal is to create work that sparks joy and wonder while honoring ancient wisdom
+                      and fostering meaningful connections.
+                    </p>
+                  </div>
                 </div>
 
                 <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
                   <h3 className="font-medium">Work Samples</h3>
                   <div className="space-y-2">
-                    <a href="https://cosmicorder.net/" className="text-purple-600 hover:text-purple-800 underline font-light block">
-                      Portfolio →
+                    <a
+                      href="https://www.figma.com/board/Y30Y1u3Ud4WTQ5KGrKGvN2/Palomix-work"
+                      className="text-blue-600 hover:text-blue-800 underline font-light block"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Portfolio Board →
                     </a>
                   </div>
                 </div>
