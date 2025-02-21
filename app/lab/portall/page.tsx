@@ -224,7 +224,7 @@ export default function Portall() {
             <div className="my-8 font-mono border border-gray-200 shadow-lg p-8 rounded-lg bg-white/50 backdrop-blur-sm">
               <h3 className="text-lg font-medium text-center mb-6">PORT+ALL VISION</h3>
               <p className="text-gray-700 leading-relaxed">
-                In parallel with the physical exhibition of Port+all, the artifacts and articles are concurrently published online via the blockchain. By merging community-driven storytelling with emerging technologies, Port+ALL ensures that the creative lifeblood of 7artscafe remains not just remembered, but continuously relevant.
+                In parallel with the physical exhibition of Port+all, the artifacts and articles are concurrently published online via the blockchain. By merging community-driven storytelling with emerging technologies, Port+all ensures that the creative lifeblood of 7artscafe remains not just remembered, but continuously relevant.
               </p>
             </div>
 
