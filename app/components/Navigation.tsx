@@ -36,17 +36,29 @@ export default function Navigation() {
           space-y-4 md:space-y-0 py-4
         `}>
           <li className="text-center">
-            <Link href="/" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="/"
+              className={`text-sm md:text-lg hover:underline font-light ${pathname === '/' ? 'text-blue-600' : ''}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
               home
             </Link>
           </li>
           <li className="text-center">
-            <Link href="/#about" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="/#about"
+              className="text-sm md:text-lg hover:underline font-light"
+              onClick={() => setIsMenuOpen(false)}
+            >
               about
             </Link>
           </li>
           <li className="text-center">
-            <Link href="/#contact" className="text-sm md:text-lg hover:underline font-light" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="/#contact"
+              className="text-sm md:text-lg hover:underline font-light"
+              onClick={() => setIsMenuOpen(false)}
+            >
               contact
             </Link>
           </li>

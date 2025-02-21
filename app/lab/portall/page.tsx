@@ -71,10 +71,10 @@ export default function Portall() {
             <section className="my-12">
               <h2 className="text-2xl mb-4 font-mono">About the Project</h2>
               <div className="font-mono py-3 prose font-light space-y-4">
-                <p>Port = a haven, a sanctuary.</p>
+                <p>Port+all = An Open Archive for 7artscafe.</p>
                 <p>Portal = a door, a gate.</p>
                 <p>All = together, a collective, from the German &ldquo;allez.&rdquo;</p>
-                <p className="mt-8">Port(ALL) is a proposal by LatexLAB to integrate 7artscafe into a global arts network using distributed technology and archival innovation. Just as ports historically connected distant cultures, cafés serve as modern meeting points for exchanging ideas, skills, and stories. Port(ALL) envisions 7artscafe as a gateway between physical and digital realms, preserving its creative ecosystem for future generations.</p>
+                <p className="mt-8">Port+all is a proposal by LatexLAB to integrate 7artscafe into a global arts network using distributed technology and archival innovation. Just as ports historically connected distant cultures, cafés serve as modern meeting points for exchanging ideas, skills, and stories. Port+all envisions 7artscafe as a gateway between physical and digital realms, preserving its creative ecosystem for future generations.</p>
               </div>
             </section>
 
@@ -98,7 +98,7 @@ export default function Portall() {
                   <div>
                     <h3 className="text-lg font-medium mb-2">Interviews</h3>
                     <p className="text-gray-600">
-                      The duo conducts 5-10 interviews with 7ArtsCafe personalities (people, pets, or both) before arriving in Japan.
+                      The duo conducts 5-10 interviews with 7artscafe personalities (people, pets, or both) before arriving in Japan.
                     </p>
                   </div>
                 </div>
@@ -190,7 +190,7 @@ export default function Portall() {
                   <div>
                     <h3 className="text-lg font-medium mb-2">Exhibition</h3>
                     <p className="text-gray-600">
-                      The final week features an exhibition at 7ArtsCafe, showcasing 3D printed items in Gacha Gacha balls and the digital archive.
+                      The final week features an exhibition at 7artscafe, showcasing 3D printed items in Gacha Gacha balls and the digital archive.
                     </p>
                     <p>
                       Other items are displayed in the cafe as small paintings, ceramics, or textiles.
@@ -282,7 +282,7 @@ export default function Portall() {
                   <div>
                     <h3 className="text-lg font-medium mb-2">Cultural Exchange</h3>
                     <p className="text-gray-600">
-                      Facilitates a unique interaction between international artists and the local community of 7ArtsCafe.
+                      Facilitates a unique interaction between international artists and the local community of 7artscafe.
                     </p>
                   </div>
                 </div>

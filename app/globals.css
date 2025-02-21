@@ -20,6 +20,12 @@
   }
 }
 
+@layer base {
+  html {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

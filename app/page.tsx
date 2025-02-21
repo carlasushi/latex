@@ -101,7 +101,7 @@ function RippleEffect() {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white font-mono">
+    <main className="relative">
       <Navigation />
       <RippleEffect />
       {/* Hero Section */}
