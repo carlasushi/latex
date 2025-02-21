@@ -53,19 +53,23 @@ export default function Artists() {
                 </tr>
 
                 {/* 1. Artistic Discipline Row */}
-                <tr>
-                  <td className="py-4 px-6">
-                    <h3 className="font-medium mb-2">Artistic Discipline</h3>
-                    <p className="text-gray-600 font-light">
-                      Creative Technology, Illustration, Blockchain Development,
-                      Textile Design, Videography, Publication Design
-                    </p>
+                <tr className="align-top">
+                  <td className="py-4 px-6 h-full">
+                    <div className="flex flex-col h-full">
+                      <h3 className="font-medium mb-2">Artistic Discipline</h3>
+                      <p className="text-gray-600 font-light">
+                        Creative Technology, Illustration, Blockchain Development,
+                        Textile Design, Videography, Publication Design
+                      </p>
+                    </div>
                   </td>
-                  <td className="py-4 px-6">
-                    <h3 className="font-medium mb-2">Artistic Discipline</h3>
-                    <p className="text-gray-600 font-light">
-                      Ceramics, Creative Technology, 3D Rendering, 3D Printing
-                    </p>
+                  <td className="py-4 px-6 h-full">
+                    <div className="flex flex-col h-full">
+                      <h3 className="font-medium mb-2">Artistic Discipline</h3>
+                      <p className="text-gray-600 font-light">
+                        Ceramics, Creative Technology, 3D Rendering, 3D Printing
+                      </p>
+                    </div>
                   </td>
                 </tr>
 
@@ -167,6 +171,30 @@ export default function Artists() {
                       >
                         Ceramics Collection →
                       </a>
+                    </div>
+                  </td>
+                </tr>
+
+                {/* 5. Residency Period Row */}
+                <tr className="align-top">
+                  <td colSpan={2} className="py-4 px-6">
+                    <h3 className="font-medium mb-2">Residency Period</h3>
+                    <p className="text-gray-600 font-light mb-4">
+                      Proposed residency timeframe for the Port+all project at 7artscafe, listed in order of preference:
+                    </p>
+                    <div className="space-y-4 font-light">
+                      <div className="flex items-start gap-4">
+                        <span className="text-gray-400">Primary</span>
+                        <p className="text-gray-600">April 1 - May 1, 2025</p>
+                      </div>
+                      <div className="flex items-start gap-4">
+                        <span className="text-gray-400">Secondary</span>
+                        <p className="text-gray-600">May 1 - June 1, 2025</p>
+                      </div>
+                      <div className="flex items-start gap-4">
+                        <span className="text-gray-400">Tertiary</span>
+                        <p className="text-gray-600">September 1 - October 1, 2025</p>
+                      </div>
                     </div>
                   </td>
                 </tr>
