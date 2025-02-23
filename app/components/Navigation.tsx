@@ -39,7 +39,6 @@ export default function Navigation() {
             <Link
               href="/"
               className={`text-sm md:text-lg hover:underline font-light ${pathname === '/' ? 'text-blue-600' : ''}`}
-              onClick={() => setIsMenuOpen(false)}
             >
               home
             </Link>
@@ -48,7 +47,6 @@ export default function Navigation() {
             <Link
               href="/#about"
               className="text-sm md:text-lg hover:underline font-light"
-              onClick={() => setIsMenuOpen(false)}
             >
               about
             </Link>
@@ -57,7 +55,6 @@ export default function Navigation() {
             <Link
               href="/#contact"
               className="text-sm md:text-lg hover:underline font-light"
-              onClick={() => setIsMenuOpen(false)}
             >
               contact
             </Link>
@@ -66,7 +63,6 @@ export default function Navigation() {
             <Link
               href="/lab"
               className={`text-sm md:text-lg hover:underline font-light ${pathname.startsWith('/lab') ? 'text-blue-600' : ''}`}
-              onClick={() => setIsMenuOpen(false)}
             >
               lab
             </Link>
@@ -75,7 +71,6 @@ export default function Navigation() {
             <Link
               href="/artists"
               className={`text-sm md:text-lg hover:underline font-light ${pathname === '/artists' ? 'text-blue-600' : ''}`}
-              onClick={() => setIsMenuOpen(false)}
             >
               artists
             </Link>

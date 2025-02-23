@@ -173,26 +173,32 @@ export default function Artists() {
                 </tr>
 
                 {/* 4. Work Samples Row */}
-                <tr>
+                <tr className="align-top">
                   <td className="py-4 px-6">
                     <h3 className="font-medium mb-2">Work Samples</h3>
-                    <div className="space-y-2">
+                    <div className="space-y-4">
                       <a
-                        href="https://toyfrens.xyz"
+                        href="https://www.figma.com/board/2U4qXABNAnDjjYVn0ePqRj/Bambi-Portfolio"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block text-blue-600 hover:text-blue-800 underline"
                       >
-                        Toy Frens NFT Community →
+                        Portfolio Board →
                       </a>
-                      <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-blue-600 hover:text-blue-800 underline"
+                      <div
+                        className="relative aspect-[16/9] w-full overflow-hidden rounded cursor-pointer"
+                        onClick={() => setSelectedMedia('/video/bambi_video.mp4')}
                       >
-                        Digital Archives Portfolio →
-                      </a>
+                        <video
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="w-full h-full object-cover"
+                        >
+                          <source src="/video/bambi_video.mp4" type="video/mp4" />
+                        </video>
+                      </div>
                     </div>
                   </td>
                   <td className="py-4 px-6">
@@ -207,7 +213,7 @@ export default function Artists() {
                         Portfolio Board →
                       </a>
                       <div
-                        className="relative aspect-[16/12] w-full overflow-hidden rounded cursor-pointer"
+                        className="relative aspect-[16/9] w-full overflow-hidden rounded cursor-pointer"
                         onClick={() => setSelectedMedia('/video/tamago.mp4')}
                       >
                         <video
@@ -215,7 +221,7 @@ export default function Artists() {
                           muted
                           loop
                           playsInline
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-cover"
                         >
                           <source src="/video/tamago.mp4" type="video/mp4" />
                         </video>
@@ -303,9 +309,14 @@ export default function Artists() {
 
                   <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
                     <h3 className="font-medium">Work Samples</h3>
-                    <div className="space-y-2">
-                      <a href="https://toyfrens.xyz" className="text-blue-600 hover:text-blue-800 underline font-light block">
-                        Toy Frens NFT Community →
+                    <div className="space-y-4">
+                      <a
+                        href="https://www.figma.com/board/2U4qXABNAnDjjYVn0ePqRj/Bambi-Portfolio"
+                        className="text-blue-600 hover:text-blue-800 underline font-light block"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Portfolio Board →
                       </a>
                     </div>
                   </div>
@@ -400,7 +411,7 @@ export default function Artists() {
                         Portfolio Board →
                       </a>
                       <div
-                        className="relative aspect-[16/12] w-full overflow-hidden rounded cursor-pointer"
+                        className="relative aspect-[16/9] w-full overflow-hidden rounded cursor-pointer"
                         onClick={() => setSelectedMedia('/video/tamago.mp4')}
                       >
                         <video
@@ -408,7 +419,7 @@ export default function Artists() {
                           muted
                           loop
                           playsInline
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-cover"
                         >
                           <source src="/video/tamago.mp4" type="video/mp4" />
                         </video>
