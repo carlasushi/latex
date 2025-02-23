@@ -59,7 +59,7 @@ export default function Lab() {
                     />
                   </div>
                   <h2 className="text-2xl font-light">{project.title}</h2>
-                  <p className="text-gray-600 mt-2">{project.description}</p>
+                  <p className="text-gray-600 mt-2 font-mono">{project.description}</p>
                 </Link>
               ))}
             </div>
