@@ -56,35 +56,9 @@ export default function Artists() {
                   <td className="py-4 px-6 h-full">
                     <div className="flex flex-col h-full">
                       <h3 className="font-medium mb-2">Background</h3>
-                      <div className="space-y-4">
-                        <div
-                          className="relative aspect-[4/3] w-full overflow-hidden group cursor-pointer"
-                          onClick={() => setSelectedMedia('/images/artists/palomix/palomix_wakes_up.png')}
-                        >
-                          <Image
-                            src="/images/artists/palomix/palomix_wakes_up.png"
-                            alt="Palomix"
-                            fill
-                            className="object-cover transition-all duration-1000 group-hover:animate-[glitch_2s_ease-in-out_infinite] animate-[organic-pulse_6s_ease-in-out_infinite]"
-                            sizes="(max-width: 768px) 100vw, 50vw"
-                            priority
-                          />
-                          <div
-                            className="absolute inset-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-70"
-                            style={{
-                              background: 'radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.05) 100%)',
-                              animation: 'organic-pulse 6s ease-in-out infinite'
-                            }}
-                          />
-                        </div>
-                        <p className="text-gray-600 font-light">
-                          PALOMIX is a ceramicist and creative technologist focusing on 3D renderings,
-                          3D printing, casting and digital preservation of artifacts. With a background in
-                          molecular biology, applied linguistics, psychology and neuroscience. She studied
-                          ceramics in California, Barcelona and Hiroshima, combining traditional craft with
-                          modern technology.
-                        </p>
-                      </div>
+                      <p className="text-gray-600 font-light">
+                        PALOMIX is a ceramicist and creative technologist engaged in 3D renderings, 3D printing, and casting. With a diverse academic background in molecular biology, applied linguistics, psychology, and neuroscience, she brings a unique perspective to her art. PALOMIX has studied ceramics in California, Barcelona, and Hiroshima, where she skillfully integrates traditional craftsmanship with modern technology to create innovative works that resonate with contemporary audiences.
+                      </p>
                     </div>
                   </td>
                 </tr>
@@ -356,35 +330,9 @@ export default function Artists() {
                 <div className="divide-y divide-gray-200 divide-dashed">
                   <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
                     <h3 className="font-medium">Background</h3>
-                    <div className="space-y-4">
-                      <div
-                        className="relative aspect-[4/3] w-full overflow-hidden group cursor-pointer"
-                        onClick={() => setSelectedMedia('/images/artists/palomix/palomix_wakes_up.png')}
-                      >
-                        <Image
-                          src="/images/artists/palomix/palomix_wakes_up.png"
-                          alt="Palomix"
-                          fill
-                          className="object-cover transition-all duration-1000 group-hover:animate-[glitch_2s_ease-in-out_infinite] animate-[organic-pulse_6s_ease-in-out_infinite]"
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                          priority
-                        />
-                        <div
-                          className="absolute inset-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-70"
-                          style={{
-                            background: 'radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.05) 100%)',
-                            animation: 'organic-pulse 6s ease-in-out infinite'
-                          }}
-                        />
-                      </div>
-                      <p className="text-gray-600 font-light">
-                        PALOMIX is a ceramicist and creative technologist focusing on 3D renderings,
-                        3D printing, casting and digital preservation of artifacts. With a background in
-                        molecular biology, applied linguistics, psychology and neuroscience. She studied
-                        ceramics in California, Barcelona and Hiroshima, combining traditional craft with
-                        modern technology.
-                      </p>
-                    </div>
+                    <p className="text-gray-600 font-light">
+                      PALOMIX is a ceramicist and creative technologist engaged in 3D renderings, 3D printing, and casting. With a diverse academic background in molecular biology, applied linguistics, psychology, and neuroscience, she brings a unique perspective to her art. PALOMIX has studied ceramics in California, Barcelona, and Hiroshima, where she skillfully integrates traditional craftsmanship with modern technology to create innovative works that resonate with diverse audiences.
+                    </p>
                   </div>
 
                   <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
