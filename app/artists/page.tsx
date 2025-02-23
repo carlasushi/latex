@@ -318,6 +318,20 @@ export default function Artists() {
                       >
                         Portfolio Board →
                       </a>
+                      <div
+                        className="relative aspect-[16/9] w-full overflow-hidden rounded cursor-pointer"
+                        onClick={() => setSelectedMedia('/video/bambi_video.mp4')}
+                      >
+                        <video
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="w-full h-full object-cover"
+                        >
+                          <source src="/video/bambi_video.mp4" type="video/mp4" />
+                        </video>
+                      </div>
                     </div>
                   </div>
                 </div>
