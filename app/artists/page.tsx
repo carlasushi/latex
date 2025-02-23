@@ -42,6 +42,17 @@ export default function Artists() {
                   <td className="py-4 px-6 h-full">
                     <div className="flex flex-col h-full">
                       <h3 className="font-medium mb-2">Background</h3>
+                      <div
+                        className="relative h-[400px] w-full overflow-hidden group cursor-pointer mb-4"
+                        onClick={() => setSelectedMedia('/images/artists/bambi/bambi_profile.jpeg')}
+                      >
+                        <Image
+                          src="/images/artists/bambi/bambi_profile.jpeg"
+                          alt="Bambi"
+                          fill
+                          className="object-contain transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:scale-105"
+                        />
+                      </div>
                       <p className="text-gray-600 font-light">
                         BAMBI is a creative technologist and illustrator based between Sydney and Berlin,
                         with an interdisciplinary practice that spans blockchain experimentation, textile
@@ -56,8 +67,22 @@ export default function Artists() {
                   <td className="py-4 px-6 h-full">
                     <div className="flex flex-col h-full">
                       <h3 className="font-medium mb-2">Background</h3>
+                      <div
+                        className="relative h-[400px] w-full overflow-hidden group cursor-pointer mb-4"
+                        onClick={() => setSelectedMedia('/video/palomix.mp4')}
+                      >
+                        <video
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="w-full h-full object-contain transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:scale-105"
+                        >
+                          <source src="/video/palomix.mp4" type="video/mp4" />
+                        </video>
+                      </div>
                       <p className="text-gray-600 font-light">
-                        PALOMIX is a ceramicist and creative technologist engaged in 3D renderings, 3D printing, and casting. With a diverse academic background in molecular biology, applied linguistics, psychology, and neuroscience, she brings a unique perspective to her art. PALOMIX has studied ceramics in California, Barcelona, and Hiroshima, where she skillfully integrates traditional craftsmanship with modern technology to create innovative works that resonate with contemporary audiences.
+                        PALOMIX is a ceramicist and creative technologist engaged in 3D renderings, 3D printing, and casting. With a diverse academic background in molecular biology, applied linguistics, psychology, and neuroscience, she brings a unique perspective to her art. PALOMIX has studied ceramics in California, Barcelona, and Hiroshima, where she skillfully integrates traditional craftsmanship with modern technology to create innovative works that resonate with diverse audiences.
                       </p>
                     </div>
                   </td>
@@ -251,6 +276,17 @@ export default function Artists() {
                 <div className="divide-y divide-gray-200">
                   <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
                     <h3 className="font-medium">Background</h3>
+                    <div
+                      className="relative h-[400px] w-full overflow-hidden group cursor-pointer mb-4"
+                      onClick={() => setSelectedMedia('/images/artists/bambi/bambi_profile.jpeg')}
+                    >
+                      <Image
+                        src="/images/artists/bambi/bambi_profile.jpeg"
+                        alt="Bambi"
+                        fill
+                        className="object-contain transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:scale-105"
+                      />
+                    </div>
                     <p className="text-gray-600 font-light">
                       BAMBI is a creative technologist and illustrator based between Sydney and Berlin,
                       with an interdisciplinary practice that spans blockchain experimentation, textile
@@ -330,6 +366,20 @@ export default function Artists() {
                 <div className="divide-y divide-gray-200 divide-dashed">
                   <div className="p-4 space-y-2 hover:bg-gray-50 transition-colors">
                     <h3 className="font-medium">Background</h3>
+                    <div
+                      className="relative h-[400px] w-full overflow-hidden group cursor-pointer mb-4"
+                      onClick={() => setSelectedMedia('/video/palomix.mp4')}
+                    >
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-contain transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:scale-105"
+                      >
+                        <source src="/video/palomix.mp4" type="video/mp4" />
+                      </video>
+                    </div>
                     <p className="text-gray-600 font-light">
                       PALOMIX is a ceramicist and creative technologist engaged in 3D renderings, 3D printing, and casting. With a diverse academic background in molecular biology, applied linguistics, psychology, and neuroscience, she brings a unique perspective to her art. PALOMIX has studied ceramics in California, Barcelona, and Hiroshima, where she skillfully integrates traditional craftsmanship with modern technology to create innovative works that resonate with diverse audiences.
                     </p>
