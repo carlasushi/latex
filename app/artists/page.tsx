@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import FloatingTitle from '../components/FloatingTitle';
 
 export default function Artists() {
   const [openArtist, setOpenArtist] = useState<string[]>([]);
@@ -20,6 +21,7 @@ export default function Artists() {
   return (
     <main className="relative">
       <Navigation />
+      <FloatingTitle pageName="ARTISTS" />
       {/* Artists Content */}
       <div className="container mx-auto px-4 pt-32">
         <div className="max-w-4xl mx-auto">

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Orbitron } from 'next/font/google';
 import Navigation from './components/Navigation';
 import RippleEffect from './components/RippleEffect';
+import FloatingTitle from './components/FloatingTitle';
 
 const orbitron = Orbitron({ subsets: ['latin'] });
 
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main className="relative">
       <Navigation />
+      <FloatingTitle pageName="HOME" />
       <RippleEffect />
       {/* Hero Section */}
       <div className="relative h-screen">

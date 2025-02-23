@@ -3,6 +3,7 @@
 import Navigation from '../../components/Navigation';
 import { projects } from '../../data/projects';
 import ImageGallery from '../../components/ImageGallery';
+import FloatingTitle from '../../components/FloatingTitle';
 
 export default function Portall() {
   const project = projects.find(p => p.slug === 'portall');
@@ -12,6 +13,7 @@ export default function Portall() {
   return (
     <main className="relative">
       <Navigation />
+      <FloatingTitle pageName="LAB / PORT+ALL" />
       {/* Project Content */}
       <div className="container mx-auto px-4 pt-32">
         {/* Project Header */}

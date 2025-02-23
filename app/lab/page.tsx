@@ -4,11 +4,13 @@ import Navigation from '../components/Navigation';
 import { projects } from '../data/projects';
 import Image from 'next/image';
 import Link from 'next/link';
+import FloatingTitle from '../components/FloatingTitle';
 
 export default function Lab() {
   return (
     <main className="relative">
       <Navigation />
+      <FloatingTitle pageName="LAB" />
       {/* Project Content */}
       <div className="container mx-auto px-4">
         {/* Hero Title */}
