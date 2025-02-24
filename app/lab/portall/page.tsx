@@ -193,7 +193,7 @@ export default function Portall() {
             <div className="my-8 font-mono border border-gray-200 shadow-lg p-8 rounded-lg bg-white/50 backdrop-blur-sm">
               <h3 className="text-lg font-medium text-center mb-6">PORT+ALL VISION</h3>
               <p className="text-gray-700 leading-relaxed">
-                Discovering the 7artscafe Community Through Encapsulated Stories. This exhibition offers a unique window into the creative fabric of 7artscafe. Through a series of Gacha Gacha capsules, visitors can explore curated snapshots of the individuals, pets, and narratives that shape this vibrant community. Scanning the QR code affixed to each capsule provides a direct portal for community bonding, inviting visitors to forge connections with the people and stories that define 7artscafe. In parallel with the physical exhibition, PORT+ALL ensures the enduring accessibility of these stories by employing blockchain technology for permanent archival and celebration of 7artscafe's legacy.
+                Discovering the 7artscafe Community Through Encapsulated Stories. This exhibition offers a unique window into the creative fabric of 7artscafe. Through a series of Gacha Gacha capsules, visitors can explore curated snapshots of the individuals, pets, and narratives that shape this vibrant community. Scanning the QR code affixed to each capsule provides a direct portal for community bonding, inviting visitors to forge connections with the people and stories that define 7artscafe. In parallel with the physical exhibition, PORT+ALL ensures the enduring accessibility of these stories by employing blockchain technology for permanent archival and celebration of 7artscafe&apos;s legacy.
               </p>
             </div>
 
