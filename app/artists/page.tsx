@@ -149,9 +149,9 @@ export default function Artists() {
                   <td colSpan={2} className="py-4 px-6">
                     <h3 className="font-medium mb-2">Project Proposal: Port+all</h3>
                     <p className="text-gray-600 mb-4 font-light">
-                      A collaborative residency project at 7artscafe that combines digital archiving,
+                      A collaborative residency project that combines digital archiving,
                       community engagement, and traditional crafts. Through Port+all, we aim to create
-                      a living digital archive that preserves and celebrates the cultural ecosystem of 7artscafe.
+                      a living digital archive that preserves and celebrates cultural ecosystems.
                     </p>
                     <div className="space-y-4">
                       <p className="text-gray-600 font-medium">Key Activities:</p>
@@ -459,9 +459,9 @@ export default function Artists() {
               <div className={`transition-all duration-300 ease-in-out ${openArtist.includes('project') ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 <div className="p-4 space-y-4">
                   <p className="text-gray-600 font-light">
-                    A collaborative residency project at 7artscafe that combines digital archiving,
+                    A collaborative residency project that combines digital archiving,
                     community engagement, and traditional crafts. Through Port+all, we aim to create
-                    a living digital archive that preserves and celebrates the cultural ecosystem of 7artscafe.
+                    a living digital archive that preserves and celebrates cultural ecosystems.
                   </p>
                   <div className="space-y-4">
                     <h3 className="font-medium">Key Activities</h3>
