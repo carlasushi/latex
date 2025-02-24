@@ -4,6 +4,7 @@ import Navigation from '../../components/Navigation';
 import { projects } from '../../data/projects';
 import ImageGallery from '../../components/ImageGallery';
 import FloatingTitle from '../../components/FloatingTitle';
+import Image from 'next/image';
 
 export default function Portall() {
   const project = projects.find(p => p.slug === 'portall');
@@ -175,6 +176,15 @@ export default function Portall() {
                   <p className="text-gray-600">
                     Every week, LatexLAB hosts <strong>open roundtable workshops</strong>, where locals can observe or actively participate in the <strong>crafting of their stories</strong>, to encourage building knowledge of craft in an inclusive and collaborative archival process.
                   </p>
+                  <div className="relative w-full h-[400px] mt-6 rounded-lg overflow-hidden">
+                    <Image
+                      src="/images/portall/images/portall_3.jpeg"
+                      alt="Workshop Image"
+                      fill
+                      className="object-contain bg-white"
+                      priority
+                    />
+                  </div>
                 </div>
               </div>
 
