@@ -72,19 +72,19 @@ export default function ImageGallery({ images, basePath, extension }: ImageGalle
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-8">
         {images.map((num) => (
           <div
             key={num}
-            className="relative aspect-[3/4] group cursor-pointer overflow-hidden rounded-lg"
+            className="relative w-full h-[600px] group cursor-pointer overflow-hidden rounded-lg"
             onClick={() => setSelectedImage(num)}
           >
             <Image
               src={`${basePath}_${num}.${extension}`}
               alt={`Port+all Gallery Image ${num}`}
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
+              sizes="100vw"
+              className="w-full h-full object-contain bg-white"
               priority={num <= 2}
             />
             <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />

@@ -42,11 +42,11 @@ export default function Portall() {
             </div>
           </section>
 
-          {/* Inspiration Gallery */}
+          {/* Gallery Section */}
           <section className="my-12">
             <h2 className="text-2xl mb-4 font-mono">Inspiration Gallery</h2>
             <ImageGallery
-              images={[1, 2, 3, 4, 5]}
+              images={[1, 2]}
               basePath="/images/portall/images/portall"
               extension="jpeg"
             />
@@ -56,6 +56,7 @@ export default function Portall() {
           <section className="my-12">
             <h2 className="text-2xl mb-4 font-mono">Port+all Project Overview</h2>
             <div className="font-mono py-3 prose font-light space-y-8">
+              {/* Project Overview with Interview Gallery */}
               <div className="flex items-start gap-6">
                 <span className="text-3xl font-light text-blue-600 opacity-50">01</span>
                 <div>
@@ -66,37 +67,7 @@ export default function Portall() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-6">
-                <span className="text-3xl font-light text-blue-600 opacity-50">02</span>
-                <div>
-                  <h3 className="text-lg font-medium mb-2">Artifact Collection</h3>
-                  <p className="text-gray-600">
-                    Upon arrival to the location significant items from these interviews are photographed and 3D scanned.
-                    Note that some items are not physical, but rather a concept or idea. These can be made into a rendering before arriving to the location.
-                  </p>
-                  <p>
-                    <a
-                      href="https://poly.cam/explore"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block mt-2 text-blue-600 hover:text-blue-800 underline"
-                    >
-                      View example scans on Polycam →
-                    </a>
-                  </p>
-                  <p>
-                    <a
-                      href="https://cosmicorder.net/animal-spirits/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block mt-2 text-blue-600 hover:text-blue-800 underline"
-                    >
-                      View previous 3D scans by Palomix →
-                    </a>
-                  </p>
-                </div>
-              </div>
-
+              {/* 3D Printing Section with Image */}
               <div className="flex items-start gap-6">
                 <span className="text-3xl font-light text-blue-600 opacity-50">03</span>
                 <div>
@@ -117,25 +88,15 @@ export default function Portall() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-6">
-                <span className="text-3xl font-light text-blue-600 opacity-50">04</span>
-                <div>
-                  <h3 className="text-lg font-medium mb-2">Documentation</h3>
-                  <p className="text-gray-600">
-                    Each 3D printed item is accompanied by a short description of its history and associated personality.
-                  </p>
-                  <p>
-                    Depending on the opportunity, items can be then casted into ceramics, a  small painting or transformed into a pattern to be used on textiles.
-                  </p>
-                </div>
-              </div>
-
+              {/* Digital Archive Section with Image */}
               <div className="flex items-start gap-6">
                 <span className="text-3xl font-light text-blue-600 opacity-50">05</span>
                 <div>
                   <h3 className="text-lg font-medium mb-2">Digital Archive</h3>
                   <p className="text-gray-600">
                     3D scans and descriptions are stored in a publicly accessible digital archive.
+                  </p>
+                  <p>
                     <a
                       href="https://opensea.io/collection/uae-nft-x-alexis-christodoulou"
                       target="_blank"
