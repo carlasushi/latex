@@ -41,13 +41,10 @@ export default function ImageGallery({ images, basePath, extension }: ImageGalle
     const touchEnd = e.changedTouches[0].clientX;
     const diff = touchStart - touchEnd;
 
-    // Swipe threshold of 50px
     if (Math.abs(diff) > 50) {
       if (diff > 0) {
-        // Swipe left
         setSelectedImage(selectedImage < images.length ? selectedImage + 1 : 1);
       } else {
-        // Swipe right
         setSelectedImage(selectedImage > 1 ? selectedImage - 1 : images.length);
       }
     }
@@ -61,7 +58,6 @@ export default function ImageGallery({ images, basePath, extension }: ImageGalle
     }
   }, [selectedImage, handleKeyDown]);
 
-  // Update corners when image is selected
   useEffect(() => {
     if (selectedImage && imageRef.current) {
       const rect = imageRef.current.getBoundingClientRect();
@@ -84,7 +80,7 @@ export default function ImageGallery({ images, basePath, extension }: ImageGalle
             onClick={() => setSelectedImage(num)}
           >
             <Image
-              src={`${basePath}/portal_${num}.${extension}`}
+              src={`${basePath}_${num}.${extension}`}
               alt={`Port+all Gallery Image ${num}`}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -141,7 +137,7 @@ export default function ImageGallery({ images, basePath, extension }: ImageGalle
             className="relative w-full h-full md:w-3/4 lg:w-2/3 max-w-5xl max-h-[80vh] m-4 animate-scaleUp"
           >
             <Image
-              src={`${basePath}/portal_${selectedImage}.${extension}`}
+              src={`${basePath}_${selectedImage}.${extension}`}
               alt={`Port+all Gallery Image ${selectedImage}`}
               fill
               className="object-contain"

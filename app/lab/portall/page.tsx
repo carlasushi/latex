@@ -30,7 +30,7 @@ export default function Portall() {
             playsInline
             className="hero-video"
           >
-            <source src="/video/port-all_2.mp4" type="video/mp4" />
+            <source src="/video/port-all.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -48,13 +48,12 @@ export default function Portall() {
               </div>
             </section>
 
-
             {/* Gallery Section */}
             <section className="my-12">
               <h2 className="text-2xl mb-4 font-mono">Inspiration Gallery</h2>
               <ImageGallery
-                images={[1, 2, 3, 4, 5]}
-                basePath="/images/portall"
+                images={[1, 2]}
+                basePath="/images/portall/portall"
                 extension="jpeg"
               />
             </section>
@@ -194,7 +193,7 @@ export default function Portall() {
             <div className="my-8 font-mono border border-gray-200 shadow-lg p-8 rounded-lg bg-white/50 backdrop-blur-sm">
               <h3 className="text-lg font-medium text-center mb-6">PORT+ALL VISION</h3>
               <p className="text-gray-700 leading-relaxed">
-                In parallel with the physical exhibition of Port+all, the artifacts and articles are concurrently published online via the blockchain. By merging community-driven storytelling with emerging technologies, Port+all ensures that the creative lifeblood of 7artscafe remains not just remembered, but continuously relevant.
+                Discovering the 7artscafe Community Through Encapsulated Stories. This exhibition offers a unique window into the creative fabric of 7artscafe. Through a series of Gacha Gacha capsules, visitors can explore curated snapshots of the individuals, pets, and narratives that shape this vibrant community. Scanning the QR code affixed to each capsule provides a direct portal for community bonding, inviting visitors to forge connections with the people and stories that define 7artscafe. In parallel with the physical exhibition, PORT+ALL ensures the enduring accessibility of these stories by employing blockchain technology for permanent archival and celebration of 7artscafe's legacy.
               </p>
             </div>
 

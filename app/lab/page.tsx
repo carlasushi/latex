@@ -53,12 +53,24 @@ export default function Lab() {
                   className="block group"
                 >
                   <div className="aspect-video relative mb-4 overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform group-hover:scale-105"
-                    />
+                    {project.slug === 'portall' ? (
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                      >
+                        <source src="/video/port-all.mp4" type="video/mp4" />
+                      </video>
+                    ) : (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition-transform group-hover:scale-105"
+                      />
+                    )}
                   </div>
                   <h2 className="text-2xl font-light">{project.title}</h2>
                   <p className="text-gray-600 mt-2 font-mono">{project.description}</p>
