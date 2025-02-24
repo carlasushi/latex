@@ -61,7 +61,7 @@ export default function Lab() {
                         playsInline
                         className="w-full h-full object-cover transition-transform group-hover:scale-105"
                       >
-                        <source src="/video/portall_video_2mp4" type="video/mp4" />
+                        <source src="/images/portall/videos/portall_video_1.mp4" type="video/mp4" />
                       </video>
                     ) : (
                       <Image
